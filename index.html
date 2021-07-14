@@ -1,69 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!-- header -->
-        <nav>
-            <img src="./images/logo.png" alt="Имя кампании">
-            <ul>
-                <li>О нас</li>
-                <li>Услуги и цены</li>
-                <li>Мастера</li>
-                <li>Контакты</li>
+        <nav class="navbar">
+            <img src="./images/logo.png" alt="Имя кампании" width="" class="logo-img">
+            <ul class="nav-list">
+                <li><a href="#about-section" class="nav-link">О нас</a></li>
+                <li><a href="#price-section" class="nav-link">Услуги и цены</a></li>
+                <li><a href="#" class="nav-link">Мастера</a></li>
+                <li><a href="#" class="nav-link">Контакты</a></li>
             </ul>
             <div>
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <a href="#">Онлайн запись</a>
+                <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
+                <a href="#footer" class="primary-btn">Онлайн запись</a>
             </div>
         </nav>
 
-        <aside>
-           <ul>
-               <li><a href="#">Instagram</a>
+        <aside class="sidebar">
+           <ul class="social-box">
+               <li><a href="#" class="social-link">Instagram</a>
                </li>
                <li>
-                   <a href="#">Facebook</a>
+                   <a href="#" class="social-link">Facebook</a>
                 </li>
            </ul> 
         </aside>
 
         <div class="slider">
-            <span></span>
-            <h1></h1>
-            <p></p>
+            <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p class="hero-description">Мы эксперты в модных мужских стрижках.
+            Работаем быстро, осторожно и со вкусом.</p>
         </div>
         <div class="slider">
-            <span></span>
-            <h1></h1>
-            <p></p>
+            <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p class="hero-description">Мы эксперты в модных мужских стрижках.
+                Работаем быстро, осторожно и со вкусом.</p>
         </div>
         <div class="slider">
-            <span></span>
-            <h1></h1>
-            <p></p>
+            <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p class="hero-description">Мы эксперты в модных мужских стрижках.
+                Работаем быстро, осторожно и со вкусом.</p>
         </div>
     </header>
-    <main>
-<section class="about">
-    <div>
-        <img src="" alt="">
-        <img src="" alt="">
+    <main class="layout">
+<section class="section-box" id="about-section">
+    <div class="about-image-box">
+        <img src="./images/about-1.jpg" alt="Намазывание пены">
+        <img src="./images/about-2.jpg" alt="Бритье">
     </div>
-    <div>
-        <span></span>
-        <h3></h3>
-        <h4></h4>
+    <div class="description-container">
+        <span class="suptitle-primary">О нас</span>
+        <h2 class="section-title">Лучший Барбершоп
+        твоего города</h2>
+        <h3 class="section-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
+        <p class="section-description"></p>
+        <a href="#" class="primary-btn dark" >Онлайн запись</a>
+    </div>
+</section>
+
+<section class="section id="price-section">
+<span class="suptitle-secondary">A hair salon for men in Kyiv</span>
+<h2 class="section-title light">Лучший Барбершоп
+    твоего города</h2>
+</section>
+<section class="section-box" id="">
+
+</section>
+
+<section class="section-box" id="">
+<span class="suptitle-primary">Проведи время в компании лучших мастеров</span>
+<h2 class="section-title light">Услуги и цены</h2>
+<div class="price-box">
+    <ul class="price-list">
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+    </ul>
+    <ul class="price-list">
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+        <li class="price-item">
+            <p></p>
+            <span></span>
+        </li>
+    </ul>
+</div>
+<a href="#footer" class="primary-btn">Онлайн запись</a>
+</section>
+
+<section class="section-box" id="why-section">
+    <div class="number-container">
+        <div class="number-box">
+            <p>600</p>
+            <span></span>
+        </div>
+        <div class="number-box">
+            <p>50</p>
+            <span></span>
+        </div>
+        <div class="number-box">
+            <p>20</p>
+            <span></span>
+        </div>
+        <div class="number-box">
+            <p>100</p>
+            <span></span>
+        </div>
+    </div>
+    <div class="description-container">
+        <span class="suptitle-primary">старая традиционная школа</span>
+        <h2 class="section-title">Почему приходят именно к нам?</h2>
+        <h3 class="section-subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</h3>
+    </div>
+</section>
+<section class="section-box" id="masters-section">
+<span class="suptitle-primary">для настоящих ценителей атмосферы</span>
+<h2 class="section-title">Наши мастера</h2>
+<ul class="masters-list">
+    <li class="master-card">
+        <img src="" alt="">
         <p></p>
-        <a href="#" class="link dark" >Онлайн запись</a>
+        <span></span>
+        <div class="masters-social-box"><a href="" class="master-social-link"></a></div>
+    </li>
+    <li class="master-card">
+        <img src="" alt="">
+        <p></p>
+        <span></span>
+        <div class="masters-social-box"><a href="" class="master-social-link"></a></div>
+    </li>
+    <li class="master-card">
+        <img src="" alt="">
+        <p></p>
+        <span></span>
+        <div class="masters-social-box"><a href="" class="master-social-link"></a></div>
+    </li>
+</ul>
+</section>
+
+<section class="section-box" id="masters-section">
+    <span class="suptitle-primary">старая традиционная школа</span>
+    <div class="image-gallery">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
     </div>
 </section>
 
     </main>
+    <footer class="footer" id="footer"></footer>
 </body>
 </html>
