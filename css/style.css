@@ -2,13 +2,54 @@
   --primary-color: #ff6c00;
   --secondary-color: #191c26;
 
-  --text-primary: #ce1d1d;
+  --text-primary: #303030;
   --text-secondary: #9da480;
+  --text-primary-lighten: #555;
 }
 
 body {
   font-family: "OpenSans", sans-serif;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* 
+.nav-links li {
+  display: inline-block;
+} */
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+nav.navbar {
+}
+
+nav.btn-box {
+  display: inline-block;
+}
+
+.nav-links {
+  outline: 2px solid navy;
+  display: inline-block;
+}
+
+.siptitle-primary,
+.siptitle-secondary {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
+
+.siptitle-secondary {
+  color: #9da48099;
+}
+
 h2.section-title {
   font-family: "Raleway";
   font-weight: bold;
@@ -18,4 +59,112 @@ h2.section-title {
 
 h2.section-title.lighten {
   color: #fff;
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+a.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  background-color: tomato;
+}
+
+a.nav-link:hover,
+.social-links:hover {
+  color: var(--secondary-color);
+}
+
+p.section-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-primary-lighten);
+}
+
+.social-links {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
+
+.primary-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid orangered;
+}
+
+.primary-btn.darken {
+  color: var(--text-primary);
+}
+
+/* price style */
+
+.price-list {
+  display: inline-block;
+}
+
+.price-item p,
+.price-item span {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
+}
+
+/* "Why us" styles */
+.number-box {
+  background: #f7f7f7;
+  width: 170px;
+  height: 132px;
+  display: inline-block;
+}
+
+.number-box,
+.number-box span {
+  display: inline-block;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.number-box span {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 11px;
+}
+
+/* masters card */
+
+.master-card p {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--text-primary);
+}
+
+.master-card span {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: orangered;
+}
+
+/* footer styles */
+.footer-contacts {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--text-secondary);
 }
