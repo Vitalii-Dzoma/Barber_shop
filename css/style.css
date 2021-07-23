@@ -1,53 +1,36 @@
 :root {
-  --primary-color: #ff6c00;
+  --primary-color: #ff6c00; /*Основной цвет сайта, используется для кнопок и рамочек */
   --secondary-color: #191c26;
 
   --text-primary: #303030;
-  --text-secondary: #9da480;
+  --text-secondary: #9da4bd;
   --text-primary-lighten: #555;
 }
 
 body {
-  font-family: "OpenSans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-/* 
-.nav-links li {
-  display: inline-block;
-} */
 
 a {
   text-decoration: none;
 }
 
-/* navbar */
-nav.navbar {
-}
-
-nav.btn-box {
-  display: inline-block;
-}
-
-.nav-links {
-  outline: 2px solid navy;
-  display: inline-block;
-}
-
-.siptitle-primary,
-.siptitle-secondary {
+.suptitle-primary,
+.suptitle-secondary {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   color: var(--text-primary);
 }
 
-.siptitle-secondary {
-  color: #9da48099;
+.suptitle-secondary {
+  color: #9da4bd99;
 }
 
 h2.section-title {
@@ -68,17 +51,31 @@ h2.section-title.lighten {
   line-height: 30px;
 }
 
+/* Navbar styles here */
+nav.navbar {
+  outline: 2px solid skyblue;
+}
+nav.navbar .btn-box {
+  display: inline-block;
+}
+
+.nav-links {
+  background-color: aqua;
+  display: inline-block;
+}
+.nav-links li {
+  display: inline-block;
+}
 a.nav-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   color: #fff;
-  background-color: tomato;
 }
 
 a.nav-link:hover,
-.social-links:hover {
-  color: var(--secondary-color);
+.social-link:hover {
+  color: var(--primary-color);
 }
 
 p.section-description {
@@ -88,7 +85,7 @@ p.section-description {
   color: var(--text-primary-lighten);
 }
 
-.social-links {
+.social-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
@@ -101,14 +98,18 @@ p.section-description {
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  border: 1px solid orangered;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #fff;
 }
 
 .primary-btn.darken {
   color: var(--text-primary);
 }
 
-/* price style */
+/* Price styles */
 
 .price-list {
   display: inline-block;
@@ -122,7 +123,8 @@ p.section-description {
   color: var(--text-secondary);
 }
 
-/* "Why us" styles */
+/* Why us styles here */
+
 .number-box {
   background: #f7f7f7;
   width: 170px;
@@ -130,22 +132,24 @@ p.section-description {
   display: inline-block;
 }
 
-.number-box,
+.number-box p,
 .number-box span {
-  display: inline-block;
+  display: block;
+  font-weight: bold;
   font-size: 42px;
   line-height: 57px;
   text-align: center;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .number-box span {
   font-style: normal;
   font-weight: 600;
-  line-height: 11px;
+  font-size: 11px;
+  line-height: 15px;
 }
 
-/* masters card */
+/* Masters styles here */
 
 .master-card p {
   font-size: 18px;
@@ -157,14 +161,14 @@ p.section-description {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  color: orangered;
+  color: #ff6c00;
 }
 
-/* footer styles */
+/* Footer styles here */
+
 .footer-contacts {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
   color: var(--text-secondary);
 }
